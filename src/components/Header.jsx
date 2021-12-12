@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div>
              <Container>
-                <Navbar expand="lg" variant="light" bg="white">
+                <Navbar expand="lg" variant="light" bg="white" className='mb-3'>
                     {/* <Container> */}
                         <Navbar.Brand href="#" className="fs-1">Spacious</Navbar.Brand>
                     {/* </Container> */}

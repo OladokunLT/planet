@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Mytabs from './components/Mytabs';
+import Mycard from './components/Mycard';
 
 
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <Mytabs />
+      <Mycard />
     </>
     // <div className="App">
     //   <header className="App-header">
