@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
 import planet1 from '../images/planet1.svg';
@@ -77,7 +77,7 @@ const Mycard = () => {
             <Row>
                 {
                     orbits.map( (orbit) =>(
-                        <Col md={3} key={orbit.id} className='mb-3'>
+                        <Col md={4} key={orbit.id} className='mb-3'>
                             <Card onClick ={ () => {setAppear(true)} }>
                                 <Card.Img variant="top" src={ orbit.image } />    
                                 <h4>{orbit.name}</h4>
@@ -88,9 +88,24 @@ const Mycard = () => {
                                 appear?  
                                 <Modal show={appear} onHide={handleClose}>
                                     <Modal.Header closeButton>
-                                        <Modal.Title>Modal heading</Modal.Title>
+                                        <Modal.Title> {orbit.name} </Modal.Title>
                                     </Modal.Header>
-                                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                                    <Modal.Body>
+                                        <p className='mb-3'> 
+                                            Planet Alpha is the place to be if you 
+                                            like everything related to planets. I know 
+                                            it’s a bit meta, but come see by yourself.
+                                        </p>
+                                        <div className="mb-3"> {orbit.id} </div>
+                                        <header>CHARACTER</header>
+                                        <div> {orbit.name} </div> 
+                                        
+                                        <div>
+                                            <div> {orbit.image} </div>  <div> {orbit.id} </div>
+                                        </div>
+                                       
+
+                                    </Modal.Body>
                                     <Modal.Footer>
                                         <Button variant="secondary" onClick={handleClose}>
                                             Close
