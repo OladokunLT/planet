@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* LOader */
+.svgLoader {
+  animation: spin 0.3s linear infinite;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divLoader {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 9999;
+}
+/* @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+.sidebar {
+width:300px !important;
+height: 600px;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(56, 54, 54);
+overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+.planet {
+width: 272px ;
+height: 200px;
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 16px;
+}
+.nav {
+width: 200px;
+}
+.text-dark {
+color: #121C33 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.character  {
+width: 16rem !important;
+height: 200px;
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 16px !important;
+cursor:pointer
+}
+.char-img {
+width: 100% !important;
+height: 120px;
+border-top-left-radius: 16px !important;
+border-top-right-radius: 16px !important;
+
+}
+
+.planetForm {
+font-family: Poppins;
+font-weight: 900;
+font-size: 48px;
+line-height: 72px;
+color: #121C33;
+letter-spacing: 1px;
+}
+.formimg {
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
+.closeForm {
+width: 112px !important;
+height: 48px !important;
+font-weight: 600 !important;
+font-size: 16px !important;
+line-height: 24px !important;  
+background: rgba(18, 28, 51, 0.05) !important;
+color: #121C33 !important;
+border-radius: 8px !important;
+border: none !important;
+}
+.createForm {
+width: 171px !important;
+height: 48px !important;
+right: 0px !important;
+bottom: 0px !important;
+background: #121C33 !important;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+border-radius: 8px !important;
+border: none !important;
+}
+.formInput {
+background: #F5F5F5 !important;
+}
+.pasteimg {
+font-style: normal !important;
+font-weight: normal !important;
+font-size: 16px !important;
+line-height: 24px !important;
+color: #121C33 !important;
+opacity: 0.6;
+
+}
+.right{
+position:fixed;
+top:5rem;
+right:1rem;
+padding:10px;
+border-radius: 30px;
+}
+.char-right{
+border-radius: 30px;
+}
+@media screen and (max-width: 770px) {
+.char-right{
+position:fixed;
+top:5rem;
+right:1rem;
+padding:10px;
+border-radius: 30px;
+}
+}
+
+@media only screen and (max-width: 438px){
+.char-img {
+width: 250px;
+}  
+.right{
+position:fixed;
+display: none;
+}
+.char-right{
+position: fixed;
+display: none;
+}
 }

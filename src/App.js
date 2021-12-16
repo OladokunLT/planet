@@ -1,35 +1,49 @@
-// import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router';
+import { BrowserRouter as Router, } from 'react-router-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import Mytabs from './components/Mytabs';
-import Mycard from './components/Mycard';
+import Characters from './component/Characters';
+import Header from './component/Header';
+import Loader from './component/Loader';
+import Planets from './component/Planets';
+
 
 
 
 function App() {
+  const [load, setLoad] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoad(false), 3000);
+  }, [])
+
   return (
     <>
-      <Header />
-      <Mytabs />
-      <Mycard />
-    </>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+{
+  load ?
+
+    <Loader/>
+
+    :
+    <Router>
+
+        <div className="px-5">
+          <h1 className="fw-bold text-dark pt-5">Spacious</h1>
+
+          <Header />
+          <Routes>
+            <Route exact path='/SpaciousTask' element={<Planets />} />
+            <Route exact path='/character' element={<Characters />} />
+          </Routes>
+        </div>
+
+        {}
+
+    </Router>
+}
+
+
+</>
   );
 }
 
