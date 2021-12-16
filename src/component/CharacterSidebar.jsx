@@ -15,12 +15,10 @@ function CharacterSidebar({name, friends, description, setShow}) {
             <p>{description}</p>
             <div>
                 <span>Planet <strong>Alpha</strong></span>
-                {/* <span>Friends <strong>{friends}</strong></span> */}
             </div>
 
     
 {
-    // console.log(friends)
     friends.map(f => {
         return             <div className="d-flex flex-row p-3" key={f.name}>
         <img src={f.image} alt="" width="70px" height="70px" className="rounded-circle p-2"/>

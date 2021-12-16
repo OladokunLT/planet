@@ -30,19 +30,13 @@ e.preventDefault()
         })
         const c = characters.concat(newChar)
         console.log(c);
-        // setChar(char.concat(newChar))
 
         console.log(newChar)
         console.log(char);
 
         localStorage.setItem("newChar", JSON.stringify(newChar));
      setChar(char.concat(JSON.parse(localStorage.getItem("newChar"))))
-    //  if (savedChars) {
-    //      setChar(char.concat)
-    //  }
-        // console.log(savedChars);
-
-    }
+  }
 
   
     return (
