@@ -29,10 +29,11 @@ function App() {
 
         <div className="px-5">
           <h1 className="fw-bold text-dark pt-5">Spacious</h1>
+          
 
           <Header />
           <Routes>
-            <Route exact path='/SpaciousTask' element={<Planets />} />
+            <Route exact path='/planet' element={<Planets />} />
             <Route exact path='/character' element={<Characters />} />
           </Routes>
         </div>
