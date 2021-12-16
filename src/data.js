@@ -16,7 +16,10 @@ import char4 from "./images/characters/character8.png"
 import char6 from "./images/characters/character12.png"
 import char7 from "./images/characters/character6.png"
 import char2 from "./images/characters/character10.png"
-
+import char9 from "./images/characters/character1.png"
+import char10 from "./images/characters/character3.png"
+import char11 from "./images/characters/character9.png"
+import char12 from "./images/characters/character11.png"
 
 
 
@@ -26,7 +29,7 @@ export const characters = [
     {
         "id" : 1,
         "name" : "Brooklyn Simmons",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Simmons is really a nice person, she is been living on planet Alpha for the last 10 years ",
         "image" : char1,
         "friends" : [
             {
@@ -75,7 +78,7 @@ export const characters = [
     {
         "id" : 2,
         "name" : "Cameron Williamson",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Williamson is really a nice person, he is been living on planet Alpha for the last 10 years ",
         "image" : char7,
         "friends" : [
             {
@@ -117,7 +120,7 @@ export const characters = [
     {
         "id" : 3,
         "name" : "Leslie Alexander",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Alexander is really a nice person, she is been living on planet Alpha for the last 10 years ",
         "image" : char3,
         "friends" : [
             {
@@ -160,7 +163,7 @@ export const characters = [
     {
         "id" : 4,
         "name" : "Kristin Watson",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Watson is really a nice person, she is been living on planet Alpha for the last 10 years ",
         "image" : char4,
         "friends" : [
             {
@@ -203,7 +206,7 @@ export const characters = [
     {
         "id" : 5,
         "name" : "Jenny Wilson",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Wilson is really a nice person, she is been living on planet Alpha for the last 10 years ",
         "image" : char5,
         "friends" : [
             {
@@ -246,7 +249,7 @@ export const characters = [
     {
         "id" : 6,
         "name" : "Marvin Mckinney",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Mckinney is really a nice person, he is been living on planet Alpha for the last 10 years ",
         "image" : char6,
         "friends" : [
             {
@@ -288,7 +291,7 @@ export const characters = [
     {
         "id" : 7,
         "name" : "Jerome Bell",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Bell is really a nice person, he is been living on planet Alpha for the last 10 years ",
         "image" : char7,
         "friends" : [
             {
@@ -330,7 +333,7 @@ export const characters = [
     {
         "id" : 8,
         "name" : "Guy Hawkins",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Hawkins is really a nice person, he is been living on planet Alpha for the last 10 years ",
         "image" : char8,
         "friends" : [
             {
@@ -372,8 +375,181 @@ export const characters = [
     {
         "id" : 9,
         "name" : "Robert Fox",
-        "description" : "Jane is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "description" : "Fox is really a nice person, he is been living on planet Alpha for the last 10 years ",
         "image" : char2,
+        "friends" : [
+            {
+                "name" : "Cameron Williamson",
+                "image" : char7,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Leslie Alexander",
+                "image" : char3,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Kristin Watson",
+                "image" : char4,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jenny Wilson",
+                "image" : char5,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Marvin Mckinney",
+                "image" : char6,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jerome Bell",
+                "image" : char7,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Guy Hawkins",
+                "image" : char8,
+                "friends" : "23 friends"
+            },
+
+        ]    },
+
+    {
+        "id" : 10,
+        "name" : "John Doe",
+        "description" : "Doe is really a nice person, he is been living on planet Alpha for the last 10 years ",
+        "image" : char9,
+        "friends" : [
+            {
+                "name" : "Cameron Williamson",
+                "image" : char7,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Leslie Alexander",
+                "image" : char3,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Kristin Watson",
+                "image" : char4,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jenny Wilson",
+                "image" : char5,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Marvin Mckinney",
+                "image" : char6,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jerome Bell",
+                "image" : char7,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Guy Hawkins",
+                "image" : char8,
+                "friends" : "23 friends"
+            },
+
+        ]    },
+    {
+        "id" : 11,
+        "name" : "John Dame",
+        "description" : "Dame is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "image" : char10,
+        "friends" : [
+            {
+                "name" : "Cameron ",
+                "image" : char7,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Leslie Alexander",
+                "image" : char3,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Kristin Watson",
+                "image" : char4,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jenny Wilson",
+                "image" : char5,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Marvin Mckinney",
+                "image" : char6,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jerome Bell",
+                "image" : char7,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Guy Hawkins",
+                "image" : char8,
+                "friends" : "23 friends"
+            },
+
+        ]    },
+    {
+        "id" : 12,
+        "name" : "Mario Mark",
+        "description" : "Mark is really a nice person, he is been living on planet Alpha for the last 10 years ",
+        "image" : char11,
+        "friends" : [
+            {
+                "name" : "Cameron Williamson",
+                "image" : char7,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Leslie Alexander",
+                "image" : char3,
+                "friends" : "23 friends",
+            },
+            {
+                "name" : "Kristin Watson",
+                "image" : char4,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jenny Wilson",
+                "image" : char5,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Marvin Mckinney",
+                "image" : char6,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Jerome Bell",
+                "image" : char7,
+                "friends" : "23 friends"
+            },
+            {
+                "name" : "Guy Hawkins",
+                "image" : char8,
+                "friends" : "23 friends"
+            },
+
+        ]    },
+    {
+        "id" : 13,
+        "name" : "Brick Lace",
+        "description" : "Lace is really a nice person, she is been living on planet Alpha for the last 10 years ",
+        "image" : char12,
         "friends" : [
             {
                 "name" : "Cameron Williamson",
