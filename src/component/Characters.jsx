@@ -22,7 +22,7 @@ const Characters = () => {
 
     return ( 
         <div className="d-flex row ">
-          <div className="d-flex flex-row col-12 col-md-8 flex-wrap">
+          <div className="d-flex flex-row col-sm-12 col-md-8 flex-wrap">
               {
                     characters.map(char =>  {
                         return <div className="card character my-4 mx-3 px-0 pointer" onClick={(e) => rollit(e, char)} key={char.id}>
